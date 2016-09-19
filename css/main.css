@@ -1,0 +1,274 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+body{
+margin-right: 10px;
+margin-left: 10px;
+}
+
+h1{
+	text-align: center;
+	font-size: 36px;
+	font-family: 'Poiret One', cursive;
+	color: #6cbcb3;
+}
+
+h2{
+	font-family: 'Poiret One', cursive;
+	font-size: 40px;
+	color:#6cbcb3;
+}
+
+h4{
+	font-family: 'Poiret One', cursive;
+	font-size: 16px;
+	line-height: 21px;
+	color: #6cbcb3;
+}
+
+a{
+	text-decoration: none;
+	color: #6cbcb3;
+}
+
+p{
+	font-family: Calisto MT;
+	font-size: 16px;
+	line-height: 21px;
+	margin-right: 1em;
+	margin-left: 1em;
+	margin-bottom: 25px;
+	color: #6cbcb3;
+}
+
+.email{
+	text-align: center;
+	margin-bottom: 0;
+}
+
+.number{
+	text-align: center;
+	margin-top: 0;
+}
+
+.face{
+width: 100%;
+}
+
+.buttons{
+	width:23%;
+	display: inline-block;
+	padding: 20px;
+}
+
+figure{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+@media only screen and (min-width: 48em){
+
+
+h1{
+	text-align: center;
+	font-size: 59px;
+	width: 50%;
+	float: left;
+	padding-top: 40px;
+}
+
+.email{
+	float: left;
+	text-align: center;
+	width: 50%;
+	float: left;
+	padding-top: 40px;
+	margin-top: -3.5em;
+	margin-left: 0;
+}
+
+.number{
+	float:left;
+	text-align: center;
+	width: 50%;
+	float: left;
+	padding-top: 10px;
+	margin-left: 0;
+}
+
+.face{
+width: 50%;
+float: right;
+padding-bottom: 20px;
+}
+
+p{
+	clear: both;
+	font-size: 17px;
+	line-height: 24px;
+}
+
+figure{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.buttons{
+	width:20%;
+}
+
+.center{
+	margin-right: 3em;
+	margin-left: 14em;
+	clear: both;
+}
+}
+
+@media only screen and (min-width: 74em){
+
+h1{
+	text-align: center;
+	font-size: 90px;
+	width:50%;
+	padding-left: 4rem;
+}
+
+h2{
+	font-size: 50px;
+}
+
+p{
+	font-size: 19px;
+	line-height: 29px;
+	width: 48%;
+	float: left;
+	padding-left: 4rem;
+	padding-right: 1rem;
+	clear: both;
+}
+
+.email{
+
+	padding-top: 40px;
+	margin-top: -6.5em;
+	margin-left: 0;
+	margin-bottom: 10px;
+}
+
+.number{
+
+	padding-top: 10px;
+	margin-left: 0;
+	margin-top: -3.2em;
+}
+
+.face{
+width: 50%;
+float: right;
+padding-bottom: 20px;
+padding-top: 1rem;
+clear: both;
+}
+
+.center{
+	margin-right: 2rem;
+	margin-left: 8rem;
+	float: left;
+	width: 30%;
+	margin-top: -16em;
+}
+
+.buttons{
+	width:20%;
+}
+
+}
+
+@media print{
+
+	@page{
+		size: 3.5in 2in;
+		border-style: double;
+		border-width: 5px;
+		border-color: #000;
+	}
+
+
+	h1{
+	text-align: left;
+	font-size: 14pt;
+	font-family: 'Poiret One', cursive;
+	float: left;
+	width:60%;
+}
+
+.email{
+
+	padding-top: 10px;
+	margin-top: -2.5em;
+	margin-left: 0;
+	margin-bottom: 10px;
+}
+
+.number{
+
+	padding-top: 10px;
+	margin-left: 0;
+	margin-top: -1em;
+	text-align: left;
+	float: left;
+}
+
+h2{
+	display: none;
+}
+
+a{
+	display: none;
+}
+
+p{
+	display:none;
+}
+
+h4{
+	text-align: left;
+	font-size: 7pt;
+	font-family: 'Poiret One', cursive;
+	float: left;
+	width:30%;
+}
+
+.face{
+width: 40%;
+float: right;
+clear:both;
+}
+
+.buttons{
+	display: none;
+}
+
+figure{
+	display:none;
+}
+}
